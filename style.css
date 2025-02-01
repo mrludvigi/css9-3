@@ -1,0 +1,360 @@
+/* || Global CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+body {
+  background-color: #0e0e0e;
+}
+a {
+  text-decoration: none;
+}
+.max_width {
+  max-width: 840px;
+  width: 100%;
+}
+
+/* || Header */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+}
+.burger_manu {
+  display: none;
+}
+.header_sec {
+  display: flex;
+  justify-content: space-between;
+}
+.header_nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.header_nav a {
+  color: #7b7b7b;
+  font-size: 16px;
+  line-height: 24px;
+  font-size: 16px;
+}
+.header_nav span:first-child a {
+  color: #fff;
+}
+h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
+h1 span {
+  color: #a00;
+}
+.profile_wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.profile_wrapper span {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+.profile_wrapper::after {
+  content: url(./images/profile.png);
+  height: 40px;
+}
+.profile_wrapper::before {
+  content: url(./images/arrowDown.svg);
+  height: 24px;
+}
+
+/* || Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px 241px;
+  gap: 32px;
+}
+.first_sec {
+  display: flex;
+  justify-content: center;
+}
+.first_sec_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 91px;
+  align-items: flex-start;
+  padding: 40px 40px 30px;
+  background-image: url(./images/logo.png), url(./images/car.png);
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  background-position: right, center;
+  border-radius: 16px;
+}
+.first_sec_heading_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+.first_sec_heading_wrapper p,
+.rating span,
+.first_sec_desc {
+  color: #7b7b7b;
+  font-size: 16px;
+  line-height: 24px;
+}
+.first_sec_heading {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.rating {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.rating div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rating div::before {
+  content: url(./images/star.svg);
+  height: 24px;
+}
+.first_sec_desc_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 356px;
+  width: 100%;
+  align-items: flex-start;
+}
+.first_sec_desc_heading {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+}
+.first_sec_desc {
+  font-size: 14px;
+  line-height: 22px;
+}
+.watch_button {
+  padding: 12px 24px;
+  border-radius: 8px 32px;
+  background: #a00;
+  box-shadow: 5px 2px 11.9px 0px #a00;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+.first_sec_desc_txt_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.second_sec {
+  display: flex;
+  justify-content: center;
+}
+.second_sec_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.second_sec_heading {
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+.form_wrapper select,
+.form_wrapper input {
+  padding: 8px 46px 8px 16px;
+  border-radius: 24px;
+  background: #191919;
+  border: none;
+}
+.form_wrapper input {
+  background-image: url(./images/search.svg);
+  padding: 8px 16px 8px 46px;
+  background-repeat: no-repeat;
+  background-position: center left 12px;
+  outline: none;
+  min-width: 269px;
+}
+.form_wrapper input:focus {
+  border-radius: 24px;
+  border: 1px solid #a00;
+  background-color: #191919;
+}
+.form_wrapper option {
+  color: #666;
+  font-size: 14px;
+  line-height: 24px;
+}
+.form_wrapper option[selected] {
+  color: #7b7b7b;
+  font-size: 16px;
+  line-height: 24px;
+}
+.form_wrapper option:hover {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 24px;
+}
+.form_wrapper select,
+.form_wrapper input::placeholder {
+  color: #7b7b7b;
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+  appearance: none;
+  flex-grow: 1;
+}
+.form_wrapper input {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.form_wrapper select {
+  background-image: url(./images/selectArrow.svg);
+  background-position: center right 12px;
+  background-repeat: no-repeat;
+}
+.film_cards button {
+  display: none;
+}
+.form_wrapper {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.third_sec {
+  display: flex;
+  justify-content: center;
+}
+.third_sec_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.film_cards {
+  width: 192px;
+  min-width: 158px;
+  min-height: 219px;
+  max-height: 219px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.first_card {
+  background-image: url(./images/firstFilm.png);
+}
+.second_card {
+  background-image: url(./images/secondFilm.png);
+}
+.third_card {
+  background-image: url(./images/thirdFilm.png);
+}
+.fourth_card {
+  background-image: url(./images/fourthFilm.png);
+}
+.fifth_card {
+  background-image: url(./images/fifthFilm.png);
+}
+.sixth_card {
+  background-image: url(./images/sixthFilm.png);
+}
+.seventh_card {
+  background-image: url(./images/seventhFilm.png);
+}
+.eighth_card {
+  background-image: url(./images/eighthFilm.png);
+}
+.film_cards div {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.film_cards:hover div {
+  backdrop-filter: blur(2px);
+}
+.film_cards:hover button {
+  display: block;
+}
+
+/* Tablet Responsive */
+
+@media screen and (max-width: 1023px) {
+  main {
+    padding-bottom: 233px;
+  }
+  .film_cards {
+    width: 0;
+  }
+  .third_sec_wrapper {
+    gap: 32px 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main,
+  header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  main {
+    padding-bottom: 104px;
+  }
+  .first_sec_wrapper {
+    background-image: url(./images/car.png);
+    background-size: cover;
+    background-position: center;
+    gap: 83px;
+    padding: 24px 8px 10px 16px;
+  }
+  .film_cards {
+    width: 100%;
+    max-width: 400px;
+  }
+  .burger_manu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .burger_manu::before {
+    content: url(./images/burger.svg);
+    height: 24px;
+  }
+  .header_nav,
+  .user_name {
+    display: none;
+  }
+}
